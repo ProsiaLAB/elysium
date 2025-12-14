@@ -1,0 +1,8 @@
+[package]
+name = "elysium"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+enum-iterator = "2.3.0"
+extensions = { git = "https://github.com/ProsiaLAB/extensions.git" }
