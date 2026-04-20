@@ -2,7 +2,7 @@ use enum_iterator::Sequence;
 use extensions::types::RVector;
 
 /// Primitive variables
-#[derive(Sequence)]
+#[derive(Sequence, Copy, Clone)]
 pub enum Prim {
     /// Mass density
     Rho,

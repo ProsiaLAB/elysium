@@ -3,7 +3,7 @@ use extensions::{self, types::RVector};
 
 use crate::elys::{Cell, Q};
 
-pub fn riemann_phi(left: &Cell, right: &Cell, x: RVector, da_dt: f64) {
+pub fn riemann_phi(left: &Cell, right: &Cell, x: &RVector, da_dt: f64) {
     let r = x[0];
 
     let mut prim_l = RVector::zeros(6);
