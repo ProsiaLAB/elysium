@@ -1,15 +1,14 @@
-use enum_iterator::all;
-use extensions::{self, types::RVector};
+use prosia_extensions::types::RVector;
 
-use crate::elys::{Cell, Q};
+use crate::elys::{Cell, NUM_Q, Prim};
 
 pub fn riemann_phi(left: &Cell, right: &Cell, x: &RVector, da_dt: f64) {
     let r = x[0];
 
-    let mut prim_l = RVector::zeros(6);
-    let mut prim_r = RVector::zeros(6);
+    let mut prim_l = Prim::default();
+    let mut prim_r = Prim::default();
 
-    for q in all::<Q>() {
+    for q in 0..NUM_Q {
         prim_l[q] = left.prim[q];
         prim_r[q] = right.prim[q];
     }
