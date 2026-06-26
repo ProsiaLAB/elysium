@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-prosia-extensions = { git = "https://github.com/ProsiaLAB/prosia-extensions.git" }
+planetes-ext = { git = "https://github.com/PlanetesLAB/planetes-ext" }

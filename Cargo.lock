@@ -12,7 +12,7 @@ checksum = "c08606f8c3cbf4ce6ec8e28fb0014a2c086708fe954eaa885384a6165172e7e8"
 name = "elysium"
 version = "0.1.0"
 dependencies = [
- "prosia-extensions",
+ "planetes-ext",
 ]
 
 [[package]]
@@ -68,6 +68,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "planetes-ext"
+version = "0.2.0"
+source = "git+https://github.com/PlanetesLAB/planetes-ext#c2ea6eef5fe5a8552d9a476c04632e2be4ea4c16"
+dependencies = [
+ "ndarray",
+ "num-traits",
+]
+
+[[package]]
 name = "portable-atomic"
 version = "1.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -80,15 +89,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c2a106d1259c23fac8e543272398ae0e3c0b8d33c88ed73d0cc71b0f1d902618"
 dependencies = [
  "portable-atomic",
-]
-
-[[package]]
-name = "prosia-extensions"
-version = "0.1.12"
-source = "git+https://github.com/ProsiaLAB/prosia-extensions.git#4af90fffaa45bde18179313d5b712bcd10dc09e7"
-dependencies = [
- "ndarray",
- "num-traits",
 ]
 
 [[package]]

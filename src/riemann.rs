@@ -1,4 +1,4 @@
-use prosia_extensions::types::RVector;
+use planetes_ext::types::RVector;
 
 use crate::elys::{Cell, NUM_Q, Prim};
 
